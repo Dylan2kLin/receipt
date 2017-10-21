@@ -23,8 +23,9 @@ int main(){
 	{
 	int icode = atoi(scode.c_str());
 
-	
-	if(tebiejiang==icode)
+	if(icode >= 100000000 || icode <= 9999999)
+	    cout<< "Error your input most have something wrong,please check again." << endl;
+	else if(tebiejiang==icode)
 		cout<< "Congrats! You won the $10M TEBIEJIANG!" << endl;
 	else if(tejiang==icode)
 		cout<< "Congrats! You won the $2M TEJIANG!" << endl;
